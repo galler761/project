@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="theme-color" content="#2196f3">
+		<title>android</title>
+		<link rel="stylesheet" href="css/framework7.material.min.css">
+		<link rel="stylesheet" href="css/framework7.material.colors.min.css">
+		<link rel="stylesheet" href="css/material-icons.css" />
+		<link rel="stylesheet" href="css/material-style.css" />
+
+		<link rel="stylesheet" href="css/iSlider.css" />
+		<link rel="stylesheet" href="css/LArea.css" />
+	</head>
+
+	<body>
+		<div class="statusbar-overlay"></div>
+		<div class="panel-overlay"></div>
+		<!--
+    	作者：1371343142@qq.com
+    	时间：2016-12-19
+    	描述：左侧滑
+    -->
+		<div class="panel panel-left panel-cover">
+			<div class="view navbar-fixed">
+				<div class="pages">
+					<div data-page="panel-left" class="page">
+						<div class="navbar" style="background-color: #689F38;">
+							<div class="navbar-inner">
+								<div class="center">个人中心</div>
+							</div>
+						</div>
+						<div class="page-content">
+							<div class="img-bg" style="margin: 2px;">
+								<img src="img/e5ff0081cb237db138012f73.jpg" height="120px" width="100%" />
+								<div class="list-block media-list" id="touxim">
+									<ul>
+										<li>
+											<a href="#" class=" item-content">
+												<div class="item-media"><img src="http://lorempixel.com/160/160/people/1" width="80" /></div>
+												<div class="item-inner" id="tex-img">
+													<div class="item-title-row">
+														<div class="item-title"> admin</div>
+													</div>
+													<div class="item-subtitle">Beatles</div>
+													<div class="item-text"> sbus feugiat. In vel dui laoreet, commodo augue id, pulvinar lacus.</div>
+												</div>
+											</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<div class="content-block-title">
+								<a href="login.html" class="button button-round button-fill close-panel">登录</a>
+							</div>
+							<div class="list-block" id="panel-left">
+								<ul>
+									<li>
+										<a href="html/index1/shopcar.html" class="item-link close-panel">
+											<div class="item-content">
+												<div class="item-media"><i class="icon material-icons">local_grocery_store</i></div>
+												<div class="item-inner">
+													<div class="item-title">购物车</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="html/index3/oder.html?value=我的订单" class="item-link close-panel">
+											<div class="item-content">
+												<div class="item-media"><i class="icon material-icons">content_paste</i></div>
+												<div class="item-inner">
+													<div class="item-title">我的订单</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="html/index3/message.html" class="item-link close-panel">
+											<div class="item-content">
+												<div class="item-media"><i class="icon material-icons">message</i></div>
+												<div class="item-inner">
+													<div class="item-title">我的消息</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="html/index4/personal.html" class="item-link close-panel">
+											<div class="item-content">
+												<div class="item-media"><i class="icon material-icons">monetization_on</i></div>
+												<div class="item-inner">
+													<div class="item-title">我的资料</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="html/index3/oder.html?value=待付款" class="item-link close-panel">
+											<div class="item-content">
+												<div class="item-media"><i class="icon material-icons">sim_card_alert</i></div>
+												<div class="item-inner">
+													<div class="item-title">待付款</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="html/index3/oder.html?value=待收货" class="item-link close-panel">
+											<div class="item-content">
+												<div class="item-media"><i class="icon material-icons">attach_money</i></div>
+												<div class="item-inner">
+													<div class="item-title">待收货</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									
+									<li>
+										<a href="html/index3/oder.html?value=待评价" class="item-link close-panel">
+											<div class="item-content">
+												<div class="item-media"><i class="icon material-icons">favorite</i></div>
+												<div class="item-inner">
+													<div class="item-title">待评价</div>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="content-block-title">
+								<a href="#" class="button button-round button-fill color-red">退出</a>
+							</div>
+
+							<div class="list-block" id="panel-left-botom">
+								<ul>
+									<li>
+										<a href="forms.html" class="item-link close-panel">
+											<div class="item-content">
+												<div class="item-media"><i class="icon material-icons">settings</i></div>
+												<div class="item-inner">
+													<div class="item-title">设置</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="html/index2/help.html" class="item-link close-panel">
+											<div class="item-content">
+												<div class="item-media"><i class="icon material-icons">new_releases</i></div>
+												<div class="item-inner">
+													<div class="item-title">帮助</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="html/index2/admin.html" class="item-link close-panel">
+											<div class="item-content">
+												<div class="item-media"><i class="icon material-icons">launch</i></div>
+												<div class="item-inner">
+													<div class="item-title">反馈</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									
+									<li>
+										<a href="list-view.html" class="item-link close-panel">
+											<div class="item-content">
+												<div class="item-media"><i class="icon material-icons">find_replace</i></div>
+												<div class="item-inner">
+													<div class="item-title">版本更新</div>
+												</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="list-view.html" class="item-link close-panel">
+											<div class="item-content">
+												<div class="item-media"><i class="icon material-icons">contact_mail</i></div>
+												<div class="item-inner">
+													<div class="item-title">隐私政策</div>
+												</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--
+    	作者：1371343142@qq.com
+    	时间：2016-12-19
+    	描述：主要内容，主面板
+    -->
+		<div class="views">
+			<div class="view view-main">
+				<div class="pages navbar-fixed">
+					<div data-page="index" class="page">
+						<!--
+              	作者：1371343142@qq.com
+              	时间：2016-12-19
+              	描述：头部标题
+              -->
+						<div class="navbar">
+							<div class="navbar-inner">
+								<div class="center" id="first-ye">首页</div>
+								<!--<div class="right">
+									<a href="#" class="open-panel link icon-only"><i class="icon icon-bars"></i></a>
+								</div>-->
+							</div>
+						</div>
+						<div class="tabs-animated-wrap">
+							<div class="tabs">
+								<div id="tab1" class="page-content tab active" style="padding-bottom: 56px;">
+									<div id="iSlider-wrapper"></div>
+									<div class="content-block1">
+										<div class="chip">
+											<div class="chip-media bg-blue"><i class="icon demo-icon-calendar">11</i></div>
+											<div class="chip-label">Set Date</div>
+										</div>
+										<div class="chip">
+											<div class="chip-media bg-blue"><i class="icon demo-icon-calendar">11</i></div>
+											<div class="chip-label">Set Date</div>
+										</div>
+										<div class="chip">
+											<div class="chip-media bg-blue"><i class="icon demo-icon-calendar">11</i></div>
+											<div class="chip-label">Set Date</div>
+										</div>
+										<div class="chip">
+											<div class="chip-media bg-pink">J</div>
+											<div class="chip-label">Jennifer</div>
+										</div>
+									</div>
+
+									<div class="list-block tablet-inset">
+										<ul>
+											<li class="item-content">
+												<div class="item-media"><i class="icon material-icons">grain</i></div>
+												<div class="item-inner">
+													<div class="item-title">大筛选</div>
+													<div class="item-after"><span class="badge">5</span></div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="content-block1">
+
+										<div class="dingb-img">
+											<a href="html/index1/shopcat.html">
+												<img src="img/e5ff0081cb237db138012f73.jpg" />
+												<div>
+													<p>大嘴唇</p>
+													<p>5454元</p>
+												</div>
+											</a>
+											<a>
+												<img src="img/e5ff0081cb237db138012f73.jpg" />
+												<div>
+													<p>拉克搜</p>
+													<p>3545元</p>
+												</div>
+											</a>
+											<a>
+												<img src="img/e5ff0081cb237db138012f73.jpg" />
+												<div>
+													<p>撒旦是</p>
+													<p>1545元</p>
+												</div>
+											</a>
+										</div>
+									</div>
+									<a href="html/index1/media-lists.html" class="button button-raised" style="font-size: 18px;">
+										<span><i class="icon material-icons">device_hub</i> </span>最新款 <span><i class=" icon material-icons">device_hub</i></span>
+									</a>
+									<div class="content-block1">
+										<div id="img-tes2">
+											<a>
+												<img src="img/e5ff0081cb237db138012f73.jpg" />
+												<div id="">
+													<p>手机大十多年</p>
+													<p>12200元</p>
+												</div>
+											</a>
+											<a>
+												<img src="img/e5ff0081cb237db138012f73.jpg" />
+												<div id="">
+													<p>手机大十多年</p>
+													<p>12200元</p>
+												</div>
+											</a>
+											<a>
+												<img src="img/e5ff0081cb237db138012f73.jpg" />
+												<div id="">
+													<p>手机大十多年</p>
+													<p>12200元</p>
+												</div>
+											</a>
+											<a>
+												<img src="img/e5ff0081cb237db138012f73.jpg" />
+												<div id="">
+													<p>手机大十多年</p>
+													<p>12200元</p>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="list-block tablet-inset">
+										<ul>
+											<li class="item-content">
+												<div class="item-media"><i class="icon material-icons">grain</i></div>
+												<div class="item-inner">
+													<div class="item-title">疯狂购</div>
+													<div class="item-after"><span class="badge">5</span></div>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="content-block1">
+										<div class="img-img4">
+											<a>
+												<img src="img/e5ff0081cb237db138012f73.jpg" />
+												<div>
+													<p>小时撒旦</p>
+													<p>154元</p>
+												</div>
+											</a>
+											<a>
+												<img src="img/e5ff0081cb237db138012f73.jpg" />
+												<div>
+													<p>小时撒旦</p>
+													<p>154元</p>
+												</div>
+											</a>
+											<a>
+												<img src="img/e5ff0081cb237db138012f73.jpg" />
+												<div>
+													<p>小时撒旦</p>
+													<p>154元</p>
+												</div>
+											</a>
+											<a>
+												<img src="img/e5ff0081cb237db138012f73.jpg" />
+												<div>
+													<p>小时撒旦</p>
+													<p>154元</p>
+												</div>
+											</a>
+										</div>
+
+									</div>
+								</div>
+								<div id="tab2" class="page-content tab" style="overflow: hidden;background: #EEEEEE;">
+									<div class="leftman">
+										<a href="#right1" class="tab-link leftavcter">爆米花</a>
+										<a href="#right2" class="tab-link">阿斯大声</a>
+										<a href="#right3" class="tab-link">爆米花</a>
+										<a href="#right4" class="tab-link">爆米花</a>
+										<a href="#right5" class="tab-link">爆米花</a>
+										<a href="#right6" class="tab-link">爆米花</a>
+										<a href="#right7" class="tab-link">爆米花</a>
+
+									</div>
+
+									<div class="tabs rightman">
+										<div id="right1" class="tab active margin55">
+											<div class="card">
+												<div class="card-header">最新特惠</div>
+												<div class="card-content">
+													<div class="card-content-inner">
+														<div class="list-block media-list">
+															<ul>
+																<li>
+																	<a href="#" class="item-link item-content">
+																		<div class="item-media"><img src="img/e5ff0081cb237db138012f73.jpg" width="80" height="80"></div>
+																		<div class="item-inner">
+																			<div class="item-title-row">
+																				<div class="item-title">Yellow Submarine</div>
+																				<div class="item-after">$15</div>
+																			</div>
+																			<div class="item-subtitle">Beatles</div>
+																			<div class="item-text">Lorem ipsum dolor sit amet...</div>
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="item-link item-content">
+																		<div class="item-media"><img src="img/e5ff0081cb237db138012f73.jpg" width="80" height="80"></div>
+																		<div class="item-inner">
+																			<div class="item-title-row">
+																				<div class="item-title">Yellow Submarine</div>
+																				<div class="item-after">$15</div>
+																			</div>
+																			<div class="item-subtitle">Beatles</div>
+																			<div class="item-text">Lorem ipsum dolor sit amet...</div>
+																		</div>
+																	</a>
+																</li>
+																<li>
+																	<a href="#" class="item-link item-content">
+																		<div class="item-media"><img src="img/e5ff0081cb237db138012f73.jpg" width="80" height="80"></div>
+																		<div class="item-inner">
+																			<div class="item-title-row">
+																				<div class="item-title">Yellow Submarine</div>
+																				<div class="item-after">$15</div>
+																			</div>
+																			<div class="item-subtitle">Beatles</div>
+																			<div class="item-text">Lorem ipsum dolor sit amet...</div>
+																		</div>
+																	</a>
+																</li>
+																<ul>
+														</div>
+													</div>
+												</div>
+												<div class="card-footer">更多</div>
+											</div>
+										</div>
+
+										<div id="right2" class="tab margin55">
+											<div class="content-block-title">好货</div>
+											<div class="list-block media-list">
+												<ul>
+													<li>
+														<a href="#" class="item-link item-content">
+															<div class="item-media"><img src="img/e5ff0081cb237db138012f73.jpg" width="80" height="80"></div>
+															<div class="item-inner">
+																<div class="item-title-row">
+																	<div class="item-title">Yellow Submarine</div>
+																	<div class="item-after">$15</div>
+																</div>
+																<div class="item-subtitle">Beatles</div>
+																<div class="item-text">Lorem ipsum dolor sit amet...</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="item-link item-content">
+															<div class="item-media"><img src="img/e5ff0081cb237db138012f73.jpg" width="80" height="80"></div>
+															<div class="item-inner">
+																<div class="item-title-row">
+																	<div class="item-title">Yellow Submarine</div>
+																	<div class="item-after">$15</div>
+																</div>
+																<div class="item-subtitle">Beatles</div>
+																<div class="item-text">Lorem ipsum dolor sit amet...</div>
+															</div>
+														</a>
+													</li>
+													<li>
+														<a href="#" class="item-link item-content">
+															<div class="item-media"><img src="img/e5ff0081cb237db138012f73.jpg" width="80" height="80"></div>
+															<div class="item-inner">
+																<div class="item-title-row">
+																	<div class="item-title">Yellow Submarine</div>
+																	<div class="item-after">$15</div>
+																</div>
+																<div class="item-subtitle">Beatles</div>
+																<div class="item-text">Lorem ipsum dolor sit amet...</div>
+															</div>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div id="right3" class="tab margin55">
+											<div class="card">
+												<div class="card-header">住家用品</div>
+
+												<div class="card-content">
+													<div class="list-block media-list">
+														<ul>
+															<li class="item-content">
+																<div class="item-media">
+																	<img src="img/e5ff0081cb237db138012f73.jpg" width="44" height="44">
+																</div>
+																<div class="item-inner">
+																	<div class="item-title-row">
+																		<div class="item-title">沙发</div>
+																	</div>
+																	<div class="item-subtitle">1212元</div>
+																</div>
+															</li>
+															<li class="item-content">
+																<div class="item-media">
+																	<img src="img/e5ff0081cb237db138012f73.jpg" width="44" height="44">
+																</div>
+																<div class="item-inner">
+																	<div class="item-title-row">
+																		<div class="item-title">长柜</div>
+																	</div>
+																	<div class="item-subtitle">121元</div>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</div>
+
+												<div class="card-footer">
+													<span>时尚,优惠</span>
+													<span>最新活动</span>
+												</div>
+											</div>
+										</div>
+										<div id="right4" class="tab margin55">
+											<div class="card facebook-card">
+												<div class="card-header">
+													<div class="facebook-avatar"><img src="img/e5ff0081cb237db138012f73.jpg" width="34" height="34"></div>
+													<div class="facebook-name">魅力女王</div>
+													<div class="facebook-date">即将登场</div>
+												</div>
+												<div class="card-content">
+													<div class="card-content-inner">
+														<p>华丽的家需要霸气的家具点缀</p>
+														<img src="img/20160427004300_QfKwt.jpeg" width="100%">
+														<p class="color-gray">2016-55-44霸气来袭</p>
+													</div>
+												</div>
+												<div class="card-footer">
+													<a href="#" class="link">关注</a>
+													<a href="#" class="link">查看</a>
+													<a href="#" class="link">分享</a>
+												</div>
+											</div>
+										</div>
+										<div id="right5" class="tab margin55">
+											<div class="card facebook-card">
+												<div class="card-header no-border">
+													<div class="facebook-avatar"><img src="img/e5ff0081cb237db138012f73.jpg" width="34" height="34"></div>
+													<div class="facebook-name">佳能电器</div>
+													<div class="facebook-date">扫货,清晰系统</div>
+												</div>
+												<div class="card-content"><img src="img/20160427004300_QfKwt.jpeg" width="100%"></div>
+												<div class="card-footer no-border">
+													<a href="#" class="link">关注</a>
+													<a href="#" class="link">查看</a>
+													<a href="#" class="link">分享</a>
+												</div>
+											</div>
+										</div>
+										<div id="right6" class="tab margin55">
+											<div class="card demo-card-header-pic">
+												<div style="background-image:url(img/20160427004300_QfKwt.jpeg)" valign="bottom" class="card-header color-white no-border">新能源</div>
+												<div class="card-content">
+													<div class="card-content-inner">
+														<p class="color-gray">2017-15-45</p>
+														<p>这是科技带来的成果,是某某公司历经10年探索</p>
+													</div>
+												</div>
+												<div class="card-footer">
+													<a href="#" class="link">查看</a>
+													<a href="#" class="link">分享</a>
+												</div>
+											</div>
+										</div>
+										<div id="right7" class="tab margin55">
+											<div class="content-block-title">
+												<a href="#" data-sortable=".sortable" class="toggle-sortable">拖拽排序</a>
+											</div>
+
+											<div class="list-block sortable ">
+												<ul>
+													<li>
+														<div class="item-content">
+															<div class="item-media"><img src="img/20160427004300_QfKwt.jpeg" width="44" height="44" /> </div>
+															<div class="item-inner">
+																<div class="item-title">智能机</div>
+																<div class="item-after">$10</div>
+															</div>
+														</div>
+
+														<div class="sortable-handler"></div>
+													</li>
+													<li>
+														<div class="item-content">
+															<div class="item-media"><img src="img/20160427004300_QfKwt.jpeg" width="44" height="44" /> </div>
+															<div class="item-inner">
+																<div class="item-title">流行机</div>
+																<div class="item-after">$20</div>
+															</div>
+														</div>
+														<div class="sortable-handler"></div>
+													</li>
+													<li>
+														<div class="item-content">
+															<div class="item-media"><img src="img/20160427004300_QfKwt.jpeg" width="44" height="44" /> </div>
+															<div class="item-inner">
+																<div class="item-title">黑盒子</div>
+																<div class="item-after">$5</div>
+															</div>
+														</div>
+														<div class="sortable-handler"></div>
+													</li>
+													<li>
+														<div class="item-content">
+															<div class="item-media"><img src="img/20160427004300_QfKwt.jpeg" width="44" height="44" /> </div>
+															<div class="item-inner">
+																<div class="item-title">黑盒子</div>
+																<div class="item-after">$5</div>
+															</div>
+														</div>
+														<div class="sortable-handler"></div>
+													</li>
+													<li>
+														<div class="item-content">
+															<div class="item-media"><img src="img/20160427004300_QfKwt.jpeg" width="44" height="44" /> </div>
+															<div class="item-inner">
+																<div class="item-title">黑盒子</div>
+																<div class="item-after">$5</div>
+															</div>
+														</div>
+														<div class="sortable-handler"></div>
+													</li>
+													<li>
+														<div class="item-content">
+															<div class="item-media"><img src="img/20160427004300_QfKwt.jpeg" width="44" height="44" /> </div>
+															<div class="item-inner">
+																<div class="item-title">黑盒子</div>
+																<div class="item-after">$5</div>
+															</div>
+														</div>
+														<div class="sortable-handler"></div>
+													</li>
+													<li>
+														<div class="item-content">
+															<div class="item-media"><img src="img/20160427004300_QfKwt.jpeg" width="44" height="44" /> </div>
+															<div class="item-inner">
+																<div class="item-title">黑盒子</div>
+																<div class="item-after">$5</div>
+															</div>
+														</div>
+														<div class="sortable-handler"></div>
+													</li>
+													<li>
+														<div class="item-content">
+															<div class="item-media"><img src="img/20160427004300_QfKwt.jpeg" width="44" height="44" /> </div>
+															<div class="item-inner">
+																<div class="item-title">黑盒子</div>
+																<div class="item-after">$5</div>
+															</div>
+														</div>
+														<div class="sortable-handler"></div>
+													</li>
+													<li>
+														<div class="item-content">
+															<div class="item-media"><img src="img/20160427004300_QfKwt.jpeg" width="44" height="44" /> </div>
+															<div class="item-inner">
+																<div class="item-title">黑盒子</div>
+																<div class="item-after">$5</div>
+															</div>
+														</div>
+														<div class="sortable-handler"></div>
+													</li>
+													<li>
+														<div class="item-content">
+															<div class="item-media"><img src="img/20160427004300_QfKwt.jpeg" width="44" height="44" /> </div>
+															<div class="item-inner">
+																<div class="item-title">黑盒子</div>
+																<div class="item-after">$5</div>
+															</div>
+														</div>
+														<div class="sortable-handler"></div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<div id="tab3" class="page-content tab" style="background: #E1E1E1;padding-bottom: 55px;">
+
+									<div class="lie-title">
+										<i class="icon material-icons">blur_on</i>&nbsp;&nbsp;主场&nbsp;&nbsp;<i class="icon material-icons">blur_on</i>
+									</div>
+									<div class="lie-content">
+										<div class="lie-content-lit">
+											<div class="bor-content">
+												<a href="html/index1/shopcat.html">
+													<div class="lit-title">iphone
+														<span><i class="icon material-icons">alarm_add</i> </span>
+													</div>
+
+													<div class="lit-img">
+
+														<img src="img/20160427004300_QfKwt.jpeg" />
+													</div>
+													<div class="lit-botton">
+														<p>最新款</p>
+														<p>1515元</p>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="lie-content-lit">
+											<div class="bor-content">
+
+												<a href="html/index1/shopcat.html">
+													<div class="lit-title">iphone
+														<span><i class="icon material-icons">alarm_add</i> </span>
+													</div>
+
+													<div class="lit-img">
+														<img src="img/20160427004300_QfKwt.jpeg" />
+													</div>
+													<div class="lit-botton">
+														<p>最新款</p>
+														<p>1515元</p>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="lie-content-lit">
+											<div class="bor-content">
+
+												<a href="html/index1/shopcat.html">
+													<div class="lit-title">iphone
+														<span><i class="icon material-icons">alarm_add</i> </span>
+													</div>
+
+													<div class="lit-img">
+														<img src="img/20160427004300_QfKwt.jpeg" />
+													</div>
+													<div class="lit-botton">
+														<p>最新款</p>
+														<p>1515元</p>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="lie-title" style="clear: both;">
+										<i class="icon material-icons">blur_on</i>&nbsp;&nbsp;专场&nbsp;&nbsp;<i class="icon material-icons">blur_on</i>
+									</div>
+									<div class="lie-content">
+										<div class="lt-content-ls">
+											<div class="ls-border">
+												<a href="html/index1/shopcat.html">
+													<div class="ls-img">
+														<img src="img/20160427004300_QfKwt.jpeg" />
+													</div>
+													<div class="ls-content">
+														<p>iphone</p>
+														<p style="font-family: '仿宋';">最新款</p>
+														<p>￥1545</p>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="lt-content-ls">
+											<div class="ls-border">
+												<a href="html/index1/shopcat.html">
+													<div class="ls-img">
+														<img src="img/20160427004300_QfKwt.jpeg" />
+													</div>
+													<div class="ls-content">
+														<p>iphone</p>
+														<p style="font-family: '仿宋';">最新款</p>
+														<p>￥1545</p>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="lt-content-ls">
+											<div class="ls-border">
+												<a href="html/index1/shopcat.html">
+													<div class="ls-img">
+														<img src="img/20160427004300_QfKwt.jpeg" />
+													</div>
+													<div class="ls-content">
+														<p>iphone</p>
+														<p style="font-family: '仿宋';">最新款</p>
+														<p>￥1545</p>
+													</div>
+												</a>
+											</div>
+										</div>
+										<div class="lt-content-ls">
+											<div class="ls-border">
+												<a href="html/index1/shopcat.html">
+													<div class="ls-img">
+														<img src="img/20160427004300_QfKwt.jpeg" />
+													</div>
+													<div class="ls-content">
+														<p>iphone</p>
+														<p style="font-family: '仿宋';">最新款</p>
+														<p>￥1545</p>
+													</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="lie-title" style="clear: both;">
+										<i class="icon material-icons">blur_on</i>&nbsp;&nbsp;优惠&nbsp;&nbsp;<i class="icon material-icons">blur_on</i>
+									</div>
+									<div class="list-block media-list">
+										<ul>
+											<li>
+												<a href="#" class="item-link item-content">
+													<div class="item-media"><img src="http://lorempixel.com/160/160/people/1" width="80" /></div>
+													<div class="item-inner">
+														<div class="item-title-row">
+															<div class="item-title">魅族max6</div>
+															<div class="item-after">红杉</div>
+														</div>
+														<div class="item-subtitle">1500元</div>
+														<div class="item-text">
+															完 的结合，一代十几单女多的见证
+														</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="item-link item-content">
+													<div class="item-media"><img src="http://lorempixel.com/160/160/people/2" width="80" /></div>
+													<div class="item-inner">
+														<div class="item-title-row">
+															<div class="item-title">华为p10</div>
+															<div class="item-after">白色</div>
+														</div>
+														<div class="item-subtitle">15454元</div>
+														<div class="item-text">
+															中国的销售管局
+														</div>
+													</div>
+												</a>
+											</li>
+											<li>
+												<a href="#" class="item-link item-content">
+													<div class="item-media"><img src="http://lorempixel.com/160/160/people/3" width="80" /></div>
+													<div class="item-inner">
+														<div class="item-title-row">
+															<div class="item-title">iphone7</div>
+															<div class="item-after">绿色</div>
+														</div>
+														<div class="item-subtitle">15450元</div>
+														<div class="item-text">
+															时代的长效，这个时代的奇迹
+														</div>
+													</div>
+												</a>
+											</li>
+										</ul>
+                                      </div>
+									</div>
+								</div>
+							</div>
+							<!--
+            	作者：1371343142@qq.com
+            	时间：2016-12-19
+            	描述：底部导航
+            -->
+							<div class="toolbar tabbar toolbar-bottom">
+								<div class="toolbar-inner">
+									<a href="#tab1" class="active tab-link">
+										<i class="icon material-icons">grain</i>
+										<span class="tabbar-label">首页</span>
+									</a>
+									<a href="#tab2" class="tab-link">
+										<i class="icon material-icons">format_indent_increase</i>
+										<span class="tabbar-label">分类</span>
+									</a>
+									<a href="#tab3" class="tab-link">
+										<i class="icon material-icons">group_work</i>
+										<span class="tabbar-label">特惠</span>
+									</a>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script type="text/javascript" src="js/framework7.min.js"></script>
+			<script type="text/javascript" src="js/iSlider.js"></script>
+			<script type="text/javascript" src="js/iSlider.animate.min.js"></script>
+			<script type="text/javascript" src="js/iSlider.plugin.button.min.js"></script>
+			<script type="text/javascript" src="js/iSlider.plugin.dot.min.js"></script>
+			<script type="text/javascript" src="js/jquery.min.js"></script>
+			<script type="text/javascript" src="js/scrollable.js"></script>
+			<script type="text/javascript" src="js/LArea.js" ></script>
+			<script type="text/javascript" src="js/LAreaData2.js" ></script>
+			<script type="text/javascript" src="js/my-app.js"></script>
+			<script type="text/javascript">
+				var list = [
+					// picture
+					{
+						content: 'img/e5ff0081cb237db138012f73.jpg'
+					},
+					// HTML String
+					{
+						content: 'img/e5ff0081cb237db138012f73.jpg'
+					},
+					{
+						content: 'img/e5ff0081cb237db138012f73.jpg'
+					},
+					{
+						content: 'img/e5ff0081cb237db138012f73.jpg'
+					},
+					// element
+
+				];
+				//
+				var S = new iSlider(document.getElementById('iSlider-wrapper'), list, {
+					isAutoplay: 1,
+					isLooping: 1,
+					isOverspread: 1,
+					animateTime: 800,
+					plugins: ['dot']
+				});
+				//			 var S = new iSlider({
+				//		        dom: document.getElementById('iSlider-wrapper'),
+				//		        data: list,
+				//		        isLooping: 1,
+				//		        isOverspread: 1,
+				//		        animateTime: 800, // ms
+				//		        plugins: ['dot','button']
+				//		    });
+			</script>
+	</body>
+
+</html>

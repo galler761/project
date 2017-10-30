@@ -1,0 +1,26 @@
+{
+	"index.html": {
+		"resources": [
+			"fonts/MaterialIcons-Regular.woff2",
+			"js/framework7.min.js",
+			"css/framework7.material.colors.min.css",
+			"css/framework7.material.min.css",
+			"js/my-app.js",
+			"css/material-icons.css",
+			"html/index1/media-lists.html",
+			"img/e5ff0081cb237db138012f73.jpg",
+			"css/material-style.css",
+			"js/iSlider.animate.min.js",
+			"js/iSlider.js",
+			"css/iSlider.css",
+			"js/iSlider.plugin.dot.min.js",
+			"js/iSlider.plugin.button.min.js",
+			"html/index1/shopcat.html",
+			"login.html",
+			"register.html",
+			"js/jquery.min.js",
+			"js/scrollable.js",
+			"password.html"
+		]
+	}
+}

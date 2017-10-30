@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags 元标签要求-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- Your app title 应用程序标题-->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS, iOS Theme  库路径 - framework7 CSS ， iOS 主题-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <!-- Path to Framework7 color related styles, iOS Theme - framework7 路径相关颜色风格 ， IOS 主题-->
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles 您的自定义样式-->
+    <link rel="stylesheet" href="css/my-app.css">
+  </head>
+  <body>
+    <!-- Status bar overlay for full screen mode (PhoneGap) 状态栏用于覆盖全屏模式 （ PhoneGap ）-->
+    <div class="statusbar-overlay"></div>
+    <!-- Views 视图-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Top Navbar 顶部导航条-->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <!-- We need cool sliding animation on title element, so we have additional "sliding" class ，-->
+            <div class="center sliding">Awesome App</div>
+          </div>
+        </div>
+        <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes，容器页面 ， 因为我们使用通过固定导航条和工具栏 ， 它具有另外的合适的类-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, "data-page" contains page name ，页面 ， “数据页面” 包含页面名称-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content 可滚动页面内容-->
+            <div class="page-content">
+              <p>Page content goes here</p>
+              <!-- Link to another page ,链接到其他页面-->
+              <a href="about.html">About app</a>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Toolbar,底部工具栏-->
+        <div class="toolbar">
+          <div class="toolbar-inner">
+            <!-- Toolbar links ，链接工具栏-->
+            <a href="#" class="link">Link 1</a>
+            <a href="#" class="link">Link 2</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS， framework7 JS 库路径-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js，JS 库路径-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html> 
